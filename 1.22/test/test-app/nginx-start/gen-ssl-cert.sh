@@ -17,7 +17,7 @@ cd $certDir
 # 	-out server.crt
 # cat server.key server.crt >>server.pem
 
-cat server.key <<EOF
+cat >server.key <<EOF
 -----BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCr9h2w3awm5ypP
 zegVNtiSLa4dOgJQAlvUH1DU8qYN9t+UrnBVsFQwMFxquBDjtyzQtWLEavVnN7BL
@@ -48,7 +48,7 @@ YHDQFVhrVrmR9FhoE8iP8c4=
 -----END PRIVATE KEY-----
 EOF
 
-cat server.crt <<EOF
+cat >server.crt <<EOF
 -----BEGIN CERTIFICATE-----
 MIIDVDCCAtugAwIBAgIUBZt3lmxVV3sumwdDUXolKXqz83gwCgYIKoZIzj0EAwIw
 gYMxCzAJBgNVBAYTAkhLMRcwFQYDVQQKDA5uZ2tpdHNoaW5nLmNvbTEeMBwGA1UE
